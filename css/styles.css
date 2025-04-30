@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1;
+  background: #faf8f6;
+  color: #388fbf;
+}
+
+header {
+  background: #faf8f6;
+  color: #388fbf;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 1;
+  font-size: 3rem; 
+}
+
+.fun-fact {
+  font-style: italic;
+  margin: 1em 0;
+}
+
+#searchInput {
+  padding: 0.5em;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-bottom: 2em;
+  display: block;
+  margin-right: auto;
+  font-size: 16px; 
+  text-align:center;
+}
+.gcse-searchbox-only {
+  margin: 2em auto;
+  max-width: 500px;
+}
+
+nav {
+  background: #faf8f6;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0.7em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: #388fbf;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #C2E5F8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
