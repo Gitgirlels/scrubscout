@@ -32,3 +32,57 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const searchResults = document.getElementById("searchResults");
+
+  // Inline index of pages (you can add more here)
+  const pages = [
+    {
+      title: "Home",
+      url: "index.html",
+      content: "Welcome to ScrubScout — your free resource for learning surgical nursing."
+    },
+    {
+      title: "Contact and Privacy Policy",
+      url: "contact-and-privacy-policy.html",
+      content: "Get in touch. View our privacy policy and disclaimer."
+    },
+    {
+      title: "Cardiac: Ross Procedure",
+      url: "specialties/cardiac/ross-procedure.html",
+      content: "Ross procedure: aortic valve replacement using the patient's pulmonary valve. Scrub nurse instruments, setup, and technique."
+    },
+    {
+      title: "Orthopaedics: Zimmer Total Hip Replacement",
+      url: "specialties/orthopaedics/zimmer-thr.html",
+      content: "Zimmer total hip arthroplasty for scrub nurses in Australia — instruments, positioning, step-by-step breakdown."
+    },
+    
+    // Add more pages as needed
+  ];
+  
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+    searchResults.innerHTML = "";
+
+    if (query.length < 2) return;
+
+    const filtered = pages.filter(page =>
+      page.title.toLowerCase().includes(query) || 
+      page.content.toLowerCase().includes(query)
+    );
+
+    if (filtered.length === 0) {
+      searchResults.innerHTML = "<li>No results found.</li>";
+      return;
+    }
+
+    filtered.forEach(page => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${page.url}">${page.title}</a>`;
+      searchResults.appendChild(li);
+    });
+  });
+});
