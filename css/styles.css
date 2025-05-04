@@ -23,23 +23,39 @@ header h1 {
 }
 
 #searchInput {
-  padding: 0.5em;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 5px;
-  border: none;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-bottom: 2em;
-  display: block;
-  margin-right: auto;
-  font-size: 16px; 
-  text-align:center;
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
-.gcse-searchbox-only {
-  margin: 2em auto;
-  max-width: 500px;
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
 }
+
+.search-results li {
+  padding: 6px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-results li a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.search-results li a:hover {
+  text-decoration: underline;
+}
+
 
 nav {
   background: #faf8f6;
