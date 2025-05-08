@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("searchInput").addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-      alert("Search function will scan site content (coming soon)");
     }
   });
 });
