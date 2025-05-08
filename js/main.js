@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Cardiac: Ross Procedure",
-      url: "specialties/cardiac/ross-procedure.html",
+      url: "specialties/cardiac/the-ross-procedure.html",
       content: "Ross procedure: aortic valve replacement using the patient's pulmonary valve. Scrub nurse instruments, setup, and technique."
     },
     {
       title: "Orthopaedics: Zimmer Total Hip Replacement",
-      url: "specialties/orthopaedics/zimmer-thr.html",
+      url: "specialties/orthopaedics/total-hip-replacement.html",
       content: "Zimmer total hip arthroplasty for scrub nurses in Australia — instruments, positioning, step-by-step breakdown."
     },
     
